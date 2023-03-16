@@ -7,6 +7,9 @@
 <script>
 import MoviesList from './movies/MoviesList.vue';
 export default {
+    mounted() {
+        this.$store.dispatch('movies/fetchMovies')
+    },
     components: {
         MoviesList: MoviesList
     }

@@ -1,1 +1,5 @@
-export default {}
+export default {
+    fetchMovies(context) {
+        context.commit('fetchMovies')
+    }
+}

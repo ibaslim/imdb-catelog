@@ -1,9 +1,9 @@
 <template>
     <div>
-        <div class="text-center">Inseption (2023)</div>
-        <a href="">
-            <div>
-                <img class="" src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_Ratio0.6800_AL_.jpg" alt="">
+        <div class="text-center">{{ localMovie.title }}</div>
+        <a class="focus:outline-none" href="javascript:void(0);">
+            <div class="flex justify-center">
+                <img class="" v-bind:src="localMovie.image" alt="">
             </div>
         </a>
     </div>
@@ -11,5 +11,11 @@
 
 <script>
 export default {
+    props: ['movie'],
+    data() {
+        return {
+            localMovie: this.movie
+        }
+    }
 }
 </script>
