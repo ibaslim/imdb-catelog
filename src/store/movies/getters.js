@@ -7,5 +7,8 @@ export default {
     },
     hasFilteredMovies(state) {
         return state.filteredMovies.length > 0
+    },
+    getMovieDetail(state) {
+        return state.movieDetail
     }
 }
