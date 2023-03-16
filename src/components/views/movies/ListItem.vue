@@ -1,9 +1,9 @@
 <template>
     <div>
         <div class="text-center">{{ localMovie.title }}</div>
-        <a class="focus:outline-none" href="javascript:void(0);">
+        <a class="focus:outline-none" :href="getDetailRoute">
             <div class="flex justify-center">
-                <img class="" v-bind:src="localMovie.image" alt="">
+                <img class="" :src="localMovie.image" alt="">
             </div>
         </a>
     </div>
@@ -15,6 +15,11 @@ export default {
     data() {
         return {
             localMovie: this.movie
+        }
+    },
+    computed: {
+        getDetailRoute() {
+            return 'movies/'+this.localMovie.id
         }
     }
 }
