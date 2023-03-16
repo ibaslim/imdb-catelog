@@ -22,8 +22,9 @@
             }
         },
         methods: {
-            search() {
-                this.$store.dispatch('movies/filterMovies', { query: this.query })
+            async search() {
+                await this.$store.dispatch('movies/filterMovies', { query: this.query })
+                this.$emit('notifyParent')
             }
         },
     }

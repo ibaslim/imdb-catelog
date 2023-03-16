@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="text-center">{{ localMovie.title }}</div>
+        <div class="text-center mb-2">{{ localMovie.title }}</div>
         <a class="focus:outline-none" :href="getDetailRoute">
             <div class="flex justify-center">
                 <img class="" :src="localMovie.image" alt="">

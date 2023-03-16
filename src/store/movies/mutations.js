@@ -5,7 +5,7 @@ export default {
         });
     },
     saveFilteredMovies(state, payload) {
-        payload.items.forEach(element => {
+        payload.results.forEach(element => {
             state.filteredMovies.push(element)
         });
     },

@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="ml-4 mt-5">
-            <a style="text-decoration: none;" class="bg-teal-dark border-2 border-teal-dark px-2 py-1 rounded text-green-lightest" href="/">{{ lables.backToHome }}</a>
+            <a style="text-decoration: none;" class="bg-teal-dark border-2 border-teal-dark px-2 py-1 rounded text-green-lightest" href="/">{{ labels.backToHome }}</a>
         </div>
         <div class="bg-blue-darkest container lg:w-1/3 mt-5 mx-4 px-5 py-5 sm:w-full">
             <h1 class="my-3 text-2xl text-teal-dark">{{ detail.fullTitle }}</h1>
@@ -46,12 +46,9 @@
                 detail: {}
             }
         },
-        created() {
-            this.$store.dispatch('movies/fetchMovieDetail', {id: this.id}) 
-        },
-        mounted() {
+        async created() {
+            await this.$store.dispatch('movies/fetchMovieDetail', {id: this.id})
             this.detail = this.$store.getters['movies/getMovieDetail']
-            console.log(this.detail)
         }
     }
 </script>

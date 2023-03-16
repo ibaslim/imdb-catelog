@@ -6,7 +6,10 @@ import DetailView from "./components/views/movies/DetailView"
 const router = createRouter({
     history: createWebHistory(),
     routes: [
-        {path: '/', component: mainPage},
+        {
+            path: '/',
+            component: mainPage
+        },
         {
             path: '/movies/:id',
             component: DetailView,
