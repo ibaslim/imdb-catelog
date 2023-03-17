@@ -10,15 +10,20 @@ yarn install
 yarn serve
 ```
 
-### Compiles and minifies for production
+# Using Docker
+
+## Project setup
 ```
-yarn build
+yarn install
 ```
 
-### Lints and fixes files
+### Build docker file using docker-compose
 ```
-yarn lint
+docker compose up -d
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### After successful build, open this url
+
+```
+http://localhost:8080
+```
