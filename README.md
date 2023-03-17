@@ -22,7 +22,7 @@ yarn install
 docker compose up -d
 ```
 
-### After setting up either of above open this link
+### After successful build, open this url
 
 ```
 http://localhost:8080
