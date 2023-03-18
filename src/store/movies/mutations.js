@@ -5,6 +5,7 @@ export default {
         });
     },
     saveFilteredMovies(state, payload) {
+        state.filteredMovies = []
         payload.results.forEach(element => {
             state.filteredMovies.push(element)
         });
