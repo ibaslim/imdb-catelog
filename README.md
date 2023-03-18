@@ -19,7 +19,7 @@ yarn install
 
 ### Build docker file using docker-compose
 ```
-docker compose up -d
+docker compose up --build -d
 ```
 
 ### After successful build, open this url
