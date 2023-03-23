@@ -1,8 +1,7 @@
 # Documentation
 
 Total working hours elapsed are 29 Hours:
--  **5 Hours** in planning
-- **24 Hours** in development and setup 
+- **14 Hours** in development and setup 
 
 # Open API choice
 
