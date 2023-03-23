@@ -1,7 +1,6 @@
 # Documentation
 
-Total working hours elapsed are 29 Hours:
-- **14 Hours** in development and setup 
+Total working hours elapsed are 14 Hours:
 
 # Open API choice
 
